@@ -1,7 +1,7 @@
 <?php 
 namespace App\Helpers;
 use Illuminate\Support\Facades\Hash;
-use App\models\Projectype;
+use App\Models\Projectype;
 use DB;
 use Auth;
 
