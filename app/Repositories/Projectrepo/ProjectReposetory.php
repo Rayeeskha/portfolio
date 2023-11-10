@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Repositories\Projectrepo;
-use App\models\Project;
+use App\Models\Project;
 use App\Traits\UploadFile;
 use JasonGuru\LaravelMakeRepository\Repository\BaseRepository;
 use Auth;
