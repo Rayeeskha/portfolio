@@ -4,12 +4,22 @@
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <div class="title-heading mt-5">
-                    <h6 class="sub-title"> {{ GoogleTranslate::trans('Looking for a Developer ', session()->get('locale')) }}</h6>
-                    <h1 class="heading text-primary mb-3"> {{ GoogleTranslate::trans("I'm Rayees khan", session()->get('locale')) }}</h1>
-                    <p class="para-desc text-muted"> {{ GoogleTranslate::trans("Obviously I'm Software Developer with over 4+ years of experience. Experienced with all stages of the development cycle for dynamic web projects.", session()->get('locale')) }}</p>
+                    <h6 class="sub-title"> 
+                        @lang('front.lookind_dev')
+                    </h6>
+                    <h1 class="heading text-primary mb-3"> 
+                        @lang('front.im_am')
+                    </h1>
+                    <p class="para-desc text-muted"> 
+                        @lang('front.obs_title')
+                    </p>
                     <div class="mt-4 pt-2">
-                        <a href="javascript:void(0)" class="btn btn-primary rounded mb-2 me-2"> {{ GoogleTranslate::trans("Hire me", session()->get('locale')) }}</a>
-                        <a href="javascript:void(0)" class="btn btn-outline-primary rounded mb-2"> {{ GoogleTranslate::trans("Download CV", session()->get('locale')) }}<i data-feather="download" class="fea icon-sm"></i></a>
+                        <a href="javascript:void(0)" class="btn btn-primary rounded mb-2 me-2"> 
+                            @lang('front.hire_me')
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary rounded mb-2"> 
+                            @lang('front.download_cv')
+                        <i data-feather="download" class="fea icon-sm"></i></a>
                     </div>
                 </div>
             </div><!--end col-->

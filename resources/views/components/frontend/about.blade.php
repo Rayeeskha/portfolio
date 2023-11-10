@@ -10,15 +10,24 @@
 
             <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
                 <div class="section-title mb-0 ms-lg-5 ms-md-3">
-                    <h4 class="title text-primary mb-3">Rayees khan</h4>
-                    <h6 class="designation mb-3">I'm a Passionate <span class="text-primary">Software Developer</span></h6>
-                    <p class="text-muted">Obviously I'm a Web Developer with over 4+ years of experience. Experienced with all stages of the development cycle for dynamic web projects. </p>
-                    <p class="text-muted">Around 4 Year of extensive experience as a PHP Laravel Developer in design, development, management of
-                    web on windows based software applications to manage, test and develop various live projects.
+                    <h4 class="title text-primary mb-3">@lang('front.rayees_khan')</h4>
+                    <h6 class="designation mb-3">
+                        @lang('front.i_am_psnt')
+                         <span class="text-primary">
+                            @lang('front.soft_dev')
+                        </span></h6>
+                    <p class="text-muted">
+                        @lang('front.obs_5yrs')
+                    </p>
+                    <p class="text-muted">
+                        @lang('front.arnd_5ys')
+
                     </p>
                     <img src="{{ asset('assets/images/home/sign.jpeg') }}" height="25" width="100" alt="">
                     <div class="mt-4">
-                        <a href="#projects" class="btn btn-primary mouse-down">View Portfolio</a>
+                        <a href="#projects" class="btn btn-primary mouse-down">
+                            @lang('front.view_port')
+                        </a>
                     </div>
                 </div>
             </div><!--end col-->
@@ -30,14 +39,17 @@
             <div class="col-12 text-center">
                 <div class="section-title">
                     <div class="position-relative">
-                        <h4 class="title text-uppercase mb-4">Hobbies & Interests</h4>
+                        <h4 class="title text-uppercase mb-4">@lang('front.hobbi_int')</h4>
 
                         <div>
                             <div class="title-box"></div>
                             <div class="title-line"></div>
                         </div>
                     </div>
-                    <p class="text-muted mx-auto para-desc mt-5 mb-0">Obviously I'm a Web Developer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                    <p class="text-muted mx-auto para-desc mt-5 mb-0">
+                        @lang('front.obs_web')
+
+                    </p>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
@@ -50,7 +62,9 @@
                             <i data-feather="monitor" class="icon fea icon-md-sm"></i>
                         </div>
                         <div class="content">
-                            <h6 class="title mb-0">Developing</h6>
+                            <h6 class="title mb-0">
+                                @lang('front.Developing')
+                            </h6>
                         </div>
                     </div>
                 </div>

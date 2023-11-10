@@ -11,6 +11,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'project' => \App\Http\Controllers\Backend\ProjectController::class,
     ]);
 
+   	Route::match(['POST','GET'],'get-project-type', [\App\Http\Controllers\Backend\ProjectController::class, 'getProjectType']);
+
     Route::match(['POST','GET'],'/status-change', [\App\Http\Controllers\CommonController::class, 'changeDataTableStatus']);
 
     Route::match(['POST','GET'],'/delete-datatable-row', [\App\Http\Controllers\CommonController::class, 'deleteDataTableRow']);

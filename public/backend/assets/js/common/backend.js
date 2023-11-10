@@ -24,6 +24,58 @@ $(document).on('click','.editBlog',function(){
 
 });
 
+// Project
+$('.addProject').click(function() {
+  $('.text-danger').html('');
+  $('.project_id').val('');
+  $('.image_show').html('');
+  $('.validateForm')[0].reset();
+  projectType();
+  $('.modal-title').html('Add Project');
+  $('#projectModal').modal('show');
+});
+
+// Edit Project
+$(document).on('click','.editProject',function(){
+  $('.text-danger').html('');
+  $('.validateForm')[0].reset();
+  $('.modal-title').html('Edit Blog');
+  let selector = $(this);
+  let tr  = selector.closest('tr');
+  projectType(tr.attr('row-projectype_id'));
+  
+  $('.project_id').val(tr.attr('row-project_id'));
+  $('.project_name').val(tr.attr('row-project_name'));
+  $('.description').val(tr.attr('row-description'));
+  $('.url').val(tr.attr('row-url'));
+  $('.image_show').html(tr.attr('row-image'));
+  
+  $('.modal-title').html('Edit Project');
+  $('#projectModal').modal('show');
+});
+
+function projectType(typeId=''){
+  $.ajax({
+    type:"GET",
+    url:ajax+'/admin/get-project-type',
+    async : true,
+    dataType : 'json',
+    success: function(response){
+      let projecttypesData = response.project_type;
+      let option = '';
+      option = '<option value="" selected="" disabled="">Select Electrician</option>';
+      $.each(projecttypesData,function(index,row){
+        let selected = "";
+        if (typeId == row.name) {
+          selected = "selected";
+        }
+        option += '<option value='+row.id+' '+selected+'>'+row.name+'</option>';
+        $('.projectypes').html(option);
+      });
+    }
+  });
+}
+
 
 
 

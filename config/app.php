@@ -186,7 +186,8 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-        'GoogleTranslate' => Stichoza\GoogleTranslate\GoogleTranslate::class
+        'GoogleTranslate' => Stichoza\GoogleTranslate\GoogleTranslate::class,
+        'CustomHelper'=> App\Helpers\CustomHelper::class,
     ])->toArray(),
 
 ];

@@ -22,6 +22,9 @@ class CommonController extends Controller
                 case "blogs":
                     $data = \App\Models\Blog::find($id);
                     break;
+                case "projects":
+                    $data = Models\Project::find($id);
+                    break; 
             }
             if(!is_null($data)){
                 if ($chek_foreign > 0) {
@@ -51,6 +54,10 @@ class CommonController extends Controller
                 case "blogs":
                     $data = Models\Blog::find($id);
                     break;
+                case "projects":
+                    $data = Models\Project::find($id);
+                    break;    
+                    
             }
             if(!is_null($data)){
                 $data->status = $data->status == 1 ? 0 : 1;
