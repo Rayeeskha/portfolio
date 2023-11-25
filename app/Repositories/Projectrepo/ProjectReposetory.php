@@ -18,7 +18,7 @@ class ProjectReposetory extends BaseRepository
     }
 
     public function getData(){
-        $data = Project::with('projectType:id,name')->select('id','project_name','description','image','added_by','status','created_at','projectype_id',\DB::raw('@rownum  := @rownum  + 1 AS DT_RowIndex'))->orderBy('id', 'DESC');
+        $data = Project::with('projectType:id,name')->select('id','project_name','description','image','added_by','status','url','created_at','projectype_id',\DB::raw('@rownum  := @rownum  + 1 AS DT_RowIndex'))->orderBy('id', 'DESC');
         return Datatables::of($data)->addIndexColumn()
                 ->addColumn('action', function($row){
                     $btn = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" class="edit btn btn-info btn-md editProject"><span class=" bx bx-edit text-white"></span></a>'; 
