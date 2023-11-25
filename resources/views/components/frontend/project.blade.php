@@ -41,12 +41,12 @@
                                 <img class="item-container img-fluid mx-auto" src="{{ asset(@$project->image) }}" alt="{{ $project->project_name }}" style="width: 100%;height: 200px">
                                 <div class="overlay-work">
                                     <div class="work-content text-center">
-                                        <a href="{{ asset(@$project->image) }}" class="lightbox text-light work-icon bg-dark d-inline-block rounded-pill "><i data-feather="{{ $project->project_name }}" class="fea icon-sm image-icon"></i></a>
+                                        <a href="{{ $project->url }}" class="lightbox text-light work-icon bg-dark d-inline-block rounded-pill " target="_blank"><i data-feather="{{ $project->project_name }}" class="fea icon-sm image-icon"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="gallary-title py-4 text-center">
-                                <h5><a href="page-portfolio-detail.html" class="title text-dark">{{ $project->project_name }}</a></h5>
+                                <h5><a href="{{ $project->url }}" class="title text-dark" target="_blank">{{ $project->project_name }}</a></h5>
                                 <span>{{ $proType->name }}</span>
                             </div>
                         </div>
