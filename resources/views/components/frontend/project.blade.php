@@ -41,7 +41,7 @@
                                 <img class="item-container img-fluid mx-auto" src="{{ asset(@$project->image) }}" alt="{{ $project->project_name }}" style="width: 100%;height: 200px">
                                 <div class="overlay-work">
                                     <div class="work-content text-center">
-                                        <a href="{{ $project->url }}" class="lightbox text-light work-icon bg-dark d-inline-block rounded-pill " target="_blank"><i data-feather="{{ $project->project_name }}" class="fea icon-sm image-icon"></i></a>
+                                        <a href="{{ asset(@$project->image) }}" class="lightbox text-light work-icon bg-dark d-inline-block rounded-pill " target="_blank"><i data-feather="{{ $project->project_name }}" class="fea icon-sm image-icon"></i></a>
                                     </div>
                                 </div>
                             </div>
