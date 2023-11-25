@@ -24,8 +24,8 @@
                     </div>
                     <div class="content mt-4">
                         <h5 class="title text-uppercase">Phone</h5>
-                        <p class="text-muted">Promising development turmoil inclusive education transformative community</p>
-                        <a href="tel:+152534-468-854" class="text-primary">+152 534-468-854</a>
+                        <p class="text-muted">9554540271</p>
+                        <a href="tel:9554540271" class="text-primary">+91 9554540271</a>
                     </div>  
                 </div>
             </div><!--end col-->
@@ -37,8 +37,8 @@
                     </div>
                     <div class="content mt-4">
                         <h5 class="title text-uppercase">Email</h5>
-                        <p class="text-muted">Promising development turmoil inclusive education transformative community</p>
-                        <a href="mailto:contact@example.com" class="text-primary">contact@example.com</a>
+                        <p class="text-muted">info@khanrayees.com</p>
+                        <a href="mailto:info@khanrayees.com" class="text-primary">info@khanrayees.com</a>
                     </div>  
                 </div>
             </div><!--end col-->
@@ -50,8 +50,8 @@
                     </div>
                     <div class="content mt-4">
                         <h5 class="title text-uppercase">Location</h5>
-                        <p class="text-muted">C/54 Northwest Freeway, Suite 558, <br>Houston, USA 485</p>
-                        <a href="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" class="video-play-icon text-primary">View on Google map</a>
+                        <p class="text-muted">Khan Market, Rabindra Nagar, New Delhi, Delhi 110003 </p>
+                       
                     </div>  
                 </div>
             </div><!--end col-->
@@ -64,9 +64,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="custom-form mb-sm-30">
-                    <form method="post" name="myForm" onsubmit="return validateForm()">
-                        <p id="error-msg"></p>
-                        <div id="simple-msg"></div>
+                    <form method="post" class="validateForm"  action="{{ route('contact_us') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="row">
@@ -74,16 +73,19 @@
                                         <div class="form-group">
                                             <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name :">
                                         </div>
+                                        <span class="text-danger Errname"></span>
                                     </div><!--end col-->
                                     <div class="col-lg-12 col-md-6">
                                         <div class="form-group">
                                             <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Your email :">
                                         </div> 
+                                        <span class="text-danger Erremail"></span>
                                     </div><!--end col-->
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject :">
-                                        </div>                                                                               
+                                        </div>                             
+                                        <span class="text-danger Errsubject"></span>                                              
                                     </div><!--end col-->
                                 </div><!--end row-->
                             </div><!--end col-->
@@ -91,11 +93,13 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message :"></textarea>
+                                    <span class="text-danger Errcomments"></span>
                                 </div>
                             </div><!--end col-->
 
                             <div class="col-sm-12 text-end">
-                                <button type="submit" id="submit" name="send" class="btn btn-primary">Send Message</button>
+                                <x-backend.preloader />
+                                <button type="submit"  class="btn btn-primary">Send Message</button>
                             </div>
                         </div>
                     </form>

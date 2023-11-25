@@ -25,6 +25,9 @@ Route::get('/clear-cache', function() {
 
 Route::get('/', HomeController::class)->name('home');
 
+// Contact us
+Route::match(['POST','GET'],'contact-us',  [HomeController::class, 'contactUs'])->name('contact_us');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

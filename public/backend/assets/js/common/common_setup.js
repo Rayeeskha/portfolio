@@ -35,7 +35,10 @@ $(function() {
                         toastr.success(response.message);
                         swal("", response.message, "success");
                         setTimeout(function() {
-                            if (response.url != '') {
+                            if (response.url == 'front') {
+                                location.reload();
+                                
+                            }else if( response.url != ''){
                                 window.location.replace(response.url);
                             } else {
                                 $('.zoomIn').modal('hide');

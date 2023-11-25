@@ -3,7 +3,7 @@
 <div id="preloader">
     <div id="status">
         <div class="logo">
-            <img src="{{ asset('assets/images/khan_rayees.png') }}" height="100" width="150" class="d-block mx-auto" alt="">
+            <img src="{{ asset('assets/images/khan_rayees_logo.png') }}" height="100" width="160" class="d-block mx-auto" alt="">
         </div>
         <div class="spinner">
             <div class="bounce1"></div>
@@ -18,8 +18,8 @@
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('assets/images/khan_rayees.png') }}" width="150" height="50" class="logo-light-mode" alt="">
-            <img src="{{ asset('assets/images/khan_rayees.png') }}" width="150" height="50" class="logo-dark-mode" alt="">
+            <img src="{{ asset('assets/images/khan_rayees_logo.png') }}" width="160" height="60" class="logo-light-mode" alt="">
+            <img src="{{ asset('assets/images/khan_rayees_logo.png') }}" width="160" height="60" class="logo-dark-mode" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span data-feather="menu" class="fea icon-md"></span>

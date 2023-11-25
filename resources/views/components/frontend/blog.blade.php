@@ -20,7 +20,7 @@
             @foreach($blogs ?? '' as $blog)
             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                 <a href="{{ route('url.routing', $blog->url ) }}">
-                    <div class="blog-post rounded shadow">
+                    <div class="blog-post rounded shadow" style="width: 100%;height: 380px">
                         <img src="{{ asset($blog->image) }}" class="img-fluid rounded-top" alt="">
                         <div class="content pt-4 pb-4 p-3">
                             {{--<ul class="list-unstyled d-flex justify-content-between post-meta">
