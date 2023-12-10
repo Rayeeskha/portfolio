@@ -7,6 +7,6 @@ use Auth;
 trait BelongsTo{
 	
 	public function projectType(){
-		return $this->belongsTo('App\Models\Projectype', 'projectype_id', 'id');
+		return $this->belongsTo('App\Models\Projectype', 'projectype_id', 'id')->take(8);
 	}
 }
