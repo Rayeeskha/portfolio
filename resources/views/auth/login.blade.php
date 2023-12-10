@@ -1,4 +1,4 @@
-<x-frontend.css />
+<x-backend.css />
 <div class="auth-page-content" style="margin-bottom: 2%; margin-top: 10%">
    <div class="container" >
    		<div class="row justify-content-center">
@@ -6,15 +6,15 @@
             <div class="card mt-4">
                <div class="card-body p-4">
                   <div class="text-center mt-2">
-                  	<a href="index.html" class="d-inline-block auth-logo">
-                  <img src="{{ asset('assets/images/logo1.jpeg') }}" alt="" height="20">
+                  	<a href="/" class="d-inline-block auth-logo">
+                  <img src="{{ asset('frontend/assets/images/logo.png') }}" alt="" height="50">
                   </a>
                      <h5 class="text-primary">Welcome Back !</h5>
                      
                   </div>
                   <div class="p-2 mt-4">
                      <form method="POST" action="{{ route('login') }}">
-        			@csrf
+        			         @csrf
                         <div class="mb-3">
                            <label for="username" class="form-label">Email</label>
                            <input type="text" class="form-control" name="email" :value="old('email')" required autofocus autocomplete="username">
@@ -38,14 +38,10 @@
                </div>
                <!-- end card body -->
             </div>
-            <!-- end card -->
-            <div class="mt-4 text-center">
-               <p class="mb-0">Don't have an account ? <a href="auth-signup-basic.html" class="fw-semibold text-primary text-decoration-underline"> Signup </a> </p>
-            </div>
          </div>
       </div>
       <!-- end row -->
    </div>
    <!-- end container -->
 </div>
-<x-frontend.js />
+<x-backend.js />
