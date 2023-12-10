@@ -57,7 +57,7 @@ class BlogController extends Controller
             Blog::updateOrCreate(['id' => $id], $input);
 
             $message = $id > 0 ? 'Updated Sucessfully' : 'Added Successfully';            
-            return response()->json(['success' => true,'message' => $message,'url'=>route('/')],200);
+            return response()->json(['success' => true,'message' => $message,'url'=>''],200);
         }catch (\Throwable $e)  {
             return response()->json(['status' => 'error', 'message' => $e->getMessage()]);
         }        
