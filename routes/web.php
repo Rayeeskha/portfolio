@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  \App\Http\Controllers\Frontend\HomeController;
+use  \App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\LangController;
 
 /*
@@ -23,10 +24,19 @@ Route::get('/clear-cache', function() {
     return "Cache is cleared";
 });
 
-Route::get('/', HomeController::class)->name('home');
+Route::get('/', FrontendController::class)->name('front');
+
+
+Route::match(['POST','GET'],'about-us',  [FrontendController::class, 'aboutUs'])->name('about_us');
+
+Route::match(['POST','GET'],'services',  [FrontendController::class, 'services'])->name('services');
+
+Route::match(['POST','GET'],'contact-us',  [FrontendController::class, 'contactUs'])->name('home.contact_us');
+
+Route::get('/old', HomeController::class)->name('home');
 
 // Contact us
-Route::match(['POST','GET'],'contact-us',  [HomeController::class, 'contactUs'])->name('contact_us');
+Route::match(['POST','GET'],'submit-contact-us',  [HomeController::class, 'contactUs'])->name('contact_us');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
