@@ -19,7 +19,7 @@ class HomeController extends Controller
     public function urlRouting($url){
     	$blog = Blog::whereurl($url)->first();
     	$blogs = Blog::latest()->take(3)->get();
-    	return view('frontend.blog.detail', compact('blog', 'blogs'));
+    	return view('frontend.front.blog.detail', compact('blog', 'blogs'));
     }
 
     public function contactUs(ContactUsRequest $request){

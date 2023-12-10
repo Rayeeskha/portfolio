@@ -31,6 +31,8 @@ Route::match(['POST','GET'],'about-us',  [FrontendController::class, 'aboutUs'])
 
 Route::match(['POST','GET'],'services',  [FrontendController::class, 'services'])->name('services');
 
+Route::match(['POST','GET'],'blog',  [FrontendController::class, 'blog'])->name('blog');
+
 Route::match(['POST','GET'],'contact-us',  [FrontendController::class, 'contactUs'])->name('home.contact_us');
 
 Route::get('/old', HomeController::class)->name('home');

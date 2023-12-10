@@ -25,6 +25,13 @@ class FrontendController extends Controller
     	return view('frontend.front.pages.contact_us');
     }
 
+    public function blog(){
+        $blogs = Blog::latest()->get();
+        return view('frontend.front.blog.blog', compact('blogs'));
+    }
+
+    
+
     
 
 

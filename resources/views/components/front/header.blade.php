@@ -45,7 +45,7 @@
              <a href="javascript:void(0)">Portfolio</a>
           </li>
           <li class="has-submenu parent-menu-item">
-             <a href="javascript:void(0)">Blog</a>
+             <a href="{{ route('blog') }}">Blog</a>
           </li>
           <li><a href="{{ route('home.contact_us') }}" class="sub-menu-item">Contact Us</a></li>
        </ul>
