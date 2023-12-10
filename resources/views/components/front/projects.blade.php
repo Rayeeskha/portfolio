@@ -24,13 +24,13 @@
       <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["{{ $proType->id }}"]'>
          <div class="group relative block rounded-xl duration-700 ease-in-out">
             <div class="relative overflow-hidden rounded-xl">
-               <a href="{{ asset(@$project->image) }}" class="lightbox" title="">
+               <a href="{{ @$project->url }}" class="lightbox" title="" target="_blank">
                <img src="{{ asset(@$project->image) }}" class="rounded-xl" alt="">
                </a>
             </div>
             <div class="content duration-700 ease-in-out">
                <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
-                  <a href="portfolio-detail-three.html" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">{{ $proType->name }}</a>
+                  <a href="{{ @$project->url }}" class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">{{ $proType->name }}</a>
                   <p class="text-slate-400 dark:text-white/60 mb-0">{{ $project->project_name }}</p>
                </div>
             </div>
