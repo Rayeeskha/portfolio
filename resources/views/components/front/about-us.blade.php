@@ -12,22 +12,31 @@
                 </div>
              </div>
              <div class="absolute md:-start-5 start-0 -bottom-16">
-                <img src="{{ asset('frontend/assets/images/photo12.jpg') }}" class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl" alt="">
+                <img src="{{ asset('frontend/assets/images/img6.jpg') }}" class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl" alt="">
              </div>
           </div>
        </div>
        <div class="lg:col-span-7 md:col-span-6">
           <div class="lg:ms-5">
-             <h6 class="text-orange-500 text-sm font-medium uppercase mb-2">About us</h6>
+             <h6 class="text-orange-500 text-sm font-medium uppercase mb-2">About us</h6><br>
              <h3 class="mb-4 md:text-2xl text-xl font-medium">Better Design <br> Better Experience</h3>
              <p class="text-slate-400 dark:text-white/60 max-w-xl">Obviously I'm a Software Developer. Experienced with all stages of the development cycle for dynamic web projects.</p>
              <div class="mt-4">
                 <div class="flex justify-between mb-2">
-                   <span class="text-slate-400 dark:text-white/60">Laravel/Vue/React</span>
-                   <span class="text-slate-400 dark:text-white/60">84%</span>
+                   <span class="text-slate-400 dark:text-white/60">Laravel/CodeIgniter</span>
+                   <span class="text-slate-400 dark:text-white/60">90%</span>
                 </div>
                 <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                   <div class="bg-orange-500 h-[6px] rounded-full" style="width: 84%"></div>
+                   <div class="bg-orange-500 h-[6px] rounded-full" style="width: 90%"></div>
+                </div>
+             </div>
+             <div class="mt-4">
+                <div class="flex justify-between mb-2">
+                   <span class="text-slate-400 dark:text-white/60">Vue js/React js/Angular js</span>
+                   <span class="text-slate-400 dark:text-white/60">74%</span>
+                </div>
+                <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                   <div class="bg-orange-500 h-[6px] rounded-full" style="width: 74%"></div>
                 </div>
              </div>
              <div class="mt-4">
@@ -42,12 +51,22 @@
              <div class="mt-4">
                 <div class="flex justify-between mb-2">
                    <span class="text-slate-400 dark:text-white/60">Wordpress/Shopify</span>
-                   <span class="text-slate-400 dark:text-white/60">95%</span>
+                   <span class="text-slate-400 dark:text-white/75">75%</span>
                 </div>
                 <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                   <div class="bg-orange-500 h-[6px] rounded-full" style="width: 95%"></div>
+                   <div class="bg-orange-500 h-[6px] rounded-full" style="width: 75%"></div>
                 </div>
              </div>
+             <div class="mt-4">
+                <div class="flex justify-between mb-2">
+                   <span class="text-slate-400 dark:text-white/60">HTML/CSS/Bootstrap/Tailwind CSS/Materialize CSS</span>
+                   <span class="text-slate-400 dark:text-white/75">75%</span>
+                </div>
+                <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                   <div class="bg-orange-500 h-[6px] rounded-full" style="width: 75%"></div>
+                </div>
+             </div>
+
           </div>
        </div>
     </div>
