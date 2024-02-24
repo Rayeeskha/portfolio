@@ -36,7 +36,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 gap-10 items-center">
          <div class="lg:col-span-5">
             <div class="relative">
-               <img src="{{ asset('frontend/assets/images/img6.jpg') }}" class="rounded-lg shadow-lg relative" alt="">
+               <img src="{{ asset('frontend/assets/images/profile.png') }}" class="rounded-lg shadow-lg relative" alt="">
             </div>
          </div>
          <!--end col-->

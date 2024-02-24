@@ -12,7 +12,7 @@
                 </div>
              </div>
              <div class="absolute md:-start-5 start-0 -bottom-16">
-                <img src="{{ asset('frontend/assets/images/img6.jpg') }}" class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl" alt="">
+                <img src="{{ asset('frontend/assets/images/profile.png') }}" class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl" alt="">
              </div>
           </div>
        </div>
